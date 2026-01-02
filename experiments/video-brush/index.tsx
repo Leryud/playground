@@ -4,7 +4,7 @@ import { useState, useRef, useEffect } from "react";
 
 export function VideoBrush() {
   const [isDrawing, setIsDrawing] = useState(false);
-  const [brushSize, setBrushSize] = useState(5);
+  const [brushSize, setBrushSize] = useState(80);
   const [brushColor, setBrushColor] = useState("#3b82f6");
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -130,7 +130,7 @@ export function VideoBrush() {
           <input
             type="range"
             min="1"
-            max="50"
+            max="200"
             value={brushSize}
             onChange={(e) => setBrushSize(Number(e.target.value))}
             className="w-full"
