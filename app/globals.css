@@ -1,28 +1,11 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+/* Global CSS Entry Point */
+/* Imports all global styles in the correct order */
 
-body {
-  background: white;
-  color: #171717;
-  font-family: Arial, Helvetica, sans-serif;
-  min-height: 100vh;
-}
-
-.experiment-card {
-  background: white;
-  transition: all 0.2s ease;
-}
-
-.experiment-card:hover {
-  transform: translateY(-2px);
-}
-
-.line-clamp-3 {
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
+@import '../styles/global/base.css';
+@import '../styles/global/typography.css';
+@import '../styles/global/layout.css';
+@import '../styles/global/components/cards.css';
+@import '../styles/global/components/buttons.css';
+@import '../styles/global/components/tags.css';
+@import '../styles/global/components/forms.css';
+@import '../styles/global/animations.css';
