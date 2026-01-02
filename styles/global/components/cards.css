@@ -1,0 +1,56 @@
+/* Card Components */
+
+.card {
+  background: white;
+  border: 1px solid var(--color-gray-200);
+  border-radius: var(--radius-md);
+  transition: all var(--transition-fast);
+  padding: 1.5rem;
+}
+
+.card:hover {
+  border-color: var(--color-gray-400);
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-2px);
+}
+
+/* Experiment card specific */
+.experiment-card {
+  background: white;
+  border: 1px solid var(--color-gray-200);
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+  transition: all var(--transition-fast);
+}
+
+.experiment-card:hover {
+  border-color: var(--color-gray-400);
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-2px);
+}
+
+/* Focus state for experiment card links */
+a:focus-visible .experiment-card {
+  outline: 2px solid var(--color-blue-500);
+  outline-offset: 2px;
+  border-color: var(--color-blue-500);
+}
+
+.experiment-card h3 {
+  font-size: var(--text-xl);
+  font-weight: 600;
+  color: var(--color-gray-900);
+  margin-bottom: 0.5rem;
+}
+
+.experiment-card p {
+  font-size: var(--text-sm);
+  color: var(--color-gray-600);
+  margin-bottom: 1rem;
+}
+
+.experiment-card .category {
+  font-size: var(--text-xs);
+  color: var(--color-gray-500);
+  margin-top: 0.75rem;
+}
