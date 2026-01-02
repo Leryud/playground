@@ -93,7 +93,7 @@ export function VideoBrush() {
       <div
         ref={containerRef}
         className="relative bg-gray-100 rounded border border-gray-300 mb-6"
-        style={{ width: "100%", height: "100%", position: "fixed" }}
+        style={{ width: "100%", height: "400px" }}
       >
         {/* Video at z-index 1 */}
         <video
