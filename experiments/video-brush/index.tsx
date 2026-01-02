@@ -24,9 +24,6 @@ export function VideoBrush() {
     }
   };
 
-  const canvas = canvasRef.current;
-  const brush = canvas?.getContext("2d");
-
   const draw = (e: React.MouseEvent | React.TouchEvent) => {
     if (!isDrawing || !canvasRef.current) return;
 
@@ -103,7 +100,7 @@ export function VideoBrush() {
           ref={videoRef}
           className="absolute top-0 left-0 w-full h-full"
           style={{ zIndex: 1 }}
-          playsInline
+          autoPlay
           muted
           loop
         >
