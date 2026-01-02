@@ -9,6 +9,9 @@ import { metadata as colorPickerMetadata } from './color-picker/metadata';
 import { TextTransformer } from './text-transformer/index';
 import { metadata as textTransformerMetadata } from './text-transformer/metadata';
 
+import { VideoBrush } from './video-brush/index';
+import { metadata as videoBrushMetadata } from './video-brush/metadata';
+
 registerExperiment({
   metadata: counterMetadata,
   component: Counter,
@@ -22,4 +25,9 @@ registerExperiment({
 registerExperiment({
   metadata: textTransformerMetadata,
   component: TextTransformer,
+});
+
+registerExperiment({
+  metadata: videoBrushMetadata,
+  component: VideoBrush,
 });
